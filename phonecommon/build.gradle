@@ -1,0 +1,26 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 23
+    }
+	
+    sourceSets.main {
+        java.srcDirs = ['src']
+        manifest.srcFile 'AndroidManifest.xml'
+        res.srcDirs = ['res']
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+        lintOptions {
+            checkReleaseBuilds false
+        }
+    }
+}

@@ -1,0 +1,46 @@
+apply plugin: 'com.android.library'
+
+repositories {
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 23
+    }
+	
+    sourceSets.main {
+        java.srcDirs = ['src', 'src-pre-N']
+        manifest.srcFile 'AndroidManifest.xml'
+        res.srcDirs = ['res']
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+        lintOptions {
+            checkReleaseBuilds false
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:24.2.+'
+    compile 'com.android.support:appcompat-v7:24.2.+'
+
+    //compile 'com.google.guava:guava:21.0'
+    //compile 'com.google.guava:guava:21+'
+    //compile 'io.janusproject.guava:guava:19.0.0'
+    compile group: 'com.google.guava', name: 'guava', version: '18.0'
+
+    compile 'com.googlecode.libphonenumber:libphonenumber:7.2.1'
+    compile 'com.googlecode.libphonenumber:geocoder:2.31'
+
+    compile project(':phonecommon')
+    compile project(':android-common')
+}
