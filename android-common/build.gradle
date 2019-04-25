@@ -2,10 +2,10 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 24
-    buildToolsVersion "25.0.2"
 
     defaultConfig {
         minSdkVersion 21
+        //noinspection ExpiredTargetSdkVersion
         targetSdkVersion 23
     }
 
@@ -21,11 +21,14 @@ android {
     }
 
     buildTypes {
-        release {
+        debug {
             minifyEnabled false
         }
-        lintOptions {
-            checkReleaseBuilds false
+        release {
+            minifyEnabled false
+            lintOptions {
+                checkReleaseBuilds false
+            }
         }
     }
 }

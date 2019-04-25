@@ -2,7 +2,6 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 24
-    buildToolsVersion "25.0.2"
 
     sourceSets.main {
         manifest.srcFile 'AndroidManifest.xml'
@@ -11,7 +10,7 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:24.2.+'
-    compile project(':contactscommon')
-    compile project(':phonecommon')
+    implementation 'com.android.support:support-v4:24.2.+'
+    implementation project(':contactscommon')
+    implementation project(':phonecommon')
 }
