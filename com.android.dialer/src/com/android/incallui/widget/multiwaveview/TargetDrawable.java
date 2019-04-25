@@ -18,7 +18,6 @@ package com.android.incallui.widget.multiwaveview;
 
 import android.content.res.Resources;
 import android.graphics.Canvas;
-import android.graphics.ColorFilter;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.StateListDrawable;
@@ -231,7 +230,8 @@ public class TargetDrawable {
         if (mDrawable == null || !mEnabled) {
             return;
         }
-        canvas.save(Canvas.MATRIX_SAVE_FLAG);
+        canvas.saveLayer(0,0,canvas.getWidth(),canvas.getHeight(),null);
+        //canvas.save(Canvas.MATRIX_SAVE_FLAG);
         canvas.scale(mScaleX, mScaleY, mPositionX, mPositionY);
         canvas.translate(mTranslationX + mPositionX, mTranslationY + mPositionY);
         canvas.translate(-0.5f * getWidth(), -0.5f * getHeight());
