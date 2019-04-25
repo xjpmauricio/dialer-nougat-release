@@ -6,13 +6,12 @@ repositories {
 
 android {
     compileSdkVersion 24
-    buildToolsVersion "25.0.2"
 
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 23
     }
-	
+
     sourceSets.main {
         java.srcDirs = ['src', 'src-pre-N']
         manifest.srcFile 'AndroidManifest.xml'
