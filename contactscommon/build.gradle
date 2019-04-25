@@ -8,7 +8,7 @@ android {
     compileSdkVersion 28
 
     defaultConfig {
-        minSdkVersion 21
+        minSdkVersion 23
         targetSdkVersion 25
     }
 
@@ -29,17 +29,11 @@ android {
 }
 
 dependencies {
-    compile 'androidx.legacy:legacy-support-v4:1.0.0'
-    compile 'androidx.appcompat:appcompat:1.0.0'
-
-    //compile 'com.google.guava:guava:21.0'
-    //compile 'com.google.guava:guava:21+'
-    //compile 'io.janusproject.guava:guava:19.0.0'
-    compile group: 'com.google.guava', name: 'guava', version: '18.0'
-
-    compile 'com.googlecode.libphonenumber:libphonenumber:7.2.1'
-    compile 'com.googlecode.libphonenumber:geocoder:2.31'
-
-    compile project(':phonecommon')
-    compile project(':android-common')
+    api 'androidx.legacy:legacy-support-v4:1.0.0'
+    api 'androidx.appcompat:appcompat:1.0.2'
+    api 'com.google.guava:guava:18.0'
+    api 'com.googlecode.libphonenumber:libphonenumber:7.2.1'
+    api 'com.googlecode.libphonenumber:geocoder:2.31'
+    api project(':phonecommon')
+    api project(':android-common')
 }

@@ -9,12 +9,12 @@ android {
     }
     defaultConfig {
         targetSdkVersion 25
-        minSdkVersion 21
+        minSdkVersion 23
     }
 }
 
 dependencies {
-    compile 'androidx.legacy:legacy-support-v4:1.0.0'
-    compile project(':contactscommon')
-    compile project(':phonecommon')
+    api 'androidx.legacy:legacy-support-v4:1.0.0'
+    api project(':contactscommon')
+    api project(':phonecommon')
 }

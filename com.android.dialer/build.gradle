@@ -8,7 +8,7 @@ android {
     compileSdkVersion 28
 
     defaultConfig {
-        minSdkVersion 21
+        minSdkVersion 23
         targetSdkVersion 25
         versionCode 30000
         versionName "3.00.00"
@@ -31,26 +31,18 @@ android {
 }
 
 dependencies {
-    compile 'androidx.legacy:legacy-support-v4:1.0.0'
-    compile 'androidx.legacy:legacy-support-v13:1.0.0'
-    compile 'androidx.appcompat:appcompat:1.0.0'
-    compile 'androidx.cardview:cardview:1.0.0'
-    compile 'com.google.android.material:material:1.0.0'
-    compile 'androidx.recyclerview:recyclerview:1.0.0'
-
-    //compile 'com.google.guava:guava:21.0'
-    //compile 'com.google.guava:guava:21+'
-    //compile 'io.janusproject.guava:guava:19.0.0'
-    compile group: 'com.google.guava', name: 'guava', version: '18.0'
-
-    compile 'com.googlecode.libphonenumber:libphonenumber:7.2.1'
-    compile 'com.googlecode.libphonenumber:geocoder:2.31'
-
-    compile 'com.google.code.findbugs:jsr305:3.0.0'
-
-    compile project(':contactscommon')
-    compile project(':phonecommon')
-    compile project(':android-common')
-
-    compile project(':incallui')
+   api 'androidx.legacy:legacy-support-v4:1.0.0'
+   api 'androidx.legacy:legacy-support-v13:1.0.0'
+   api 'androidx.appcompat:appcompat:1.0.2'
+   api 'androidx.cardview:cardview:1.0.0'
+   api 'com.google.android.material:material:1.0.0'
+   api 'androidx.recyclerview:recyclerview:1.0.0'
+   api 'com.google.guava:guava:18.0'
+   api 'com.googlecode.libphonenumber:libphonenumber:7.2.1'
+   api 'com.googlecode.libphonenumber:geocoder:2.31'
+   api 'com.google.code.findbugs:jsr305:3.0.2'
+   api project(':contactscommon')
+   api project(':phonecommon')
+   api project(':android-common')
+   api project(':incallui')
 }
