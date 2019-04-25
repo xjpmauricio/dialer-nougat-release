@@ -16,16 +16,15 @@
 package com.android.contacts.common.compat;
 
 import android.os.Build;
-import android.os.Build.VERSION;
-import android.support.annotation.Nullable;
-import android.support.v4.os.BuildCompat;
+
+import androidx.annotation.Nullable;
+import androidx.core.os.BuildCompat;
 import android.text.TextUtils;
 import android.util.Log;
 
 import com.android.contacts.common.model.CPOWrapper;
 
 import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
 
 public final class CompatUtils {
 

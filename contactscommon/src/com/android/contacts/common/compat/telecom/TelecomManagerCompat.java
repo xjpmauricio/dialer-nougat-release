@@ -17,9 +17,8 @@ package com.android.contacts.common.compat.telecom;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.content.Context;
 import android.net.Uri;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.telecom.PhoneAccount;
 import android.telecom.PhoneAccountHandle;
 import android.telecom.TelecomManager;
@@ -29,7 +28,6 @@ import android.text.TextUtils;
 
 import com.android.contacts.common.compat.CompatUtils;
 
-import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 

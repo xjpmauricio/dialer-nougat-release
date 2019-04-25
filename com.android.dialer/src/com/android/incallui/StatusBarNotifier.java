@@ -36,8 +36,8 @@ import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.media.AudioAttributes;
 import android.net.Uri;
-import android.provider.ContactsContract.Contacts;
-import android.support.annotation.Nullable;
+
+import androidx.annotation.Nullable;
 import android.telecom.Call.Details;
 import android.telecom.PhoneAccount;
 import android.telecom.TelecomManager;

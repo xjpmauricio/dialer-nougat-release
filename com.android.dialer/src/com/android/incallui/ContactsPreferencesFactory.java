@@ -17,7 +17,7 @@
 package com.android.incallui;
 
 import android.content.Context;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import com.android.dialer.compat.UserManagerCompat;
 
 import com.android.contacts.common.preference.ContactsPreferences;

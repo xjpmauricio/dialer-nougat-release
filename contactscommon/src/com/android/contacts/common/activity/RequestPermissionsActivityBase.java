@@ -16,7 +16,6 @@
 
 package com.android.contacts.common.activity;
 
-import com.android.contacts.common.R;
 import com.android.contacts.common.model.AccountTypeManager;
 
 import android.app.Activity;
@@ -25,8 +24,8 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Trace;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -369,7 +369,7 @@
             android:exported="false"
             android:multiprocess="false" />
         <provider
-            android:name="android.support.v4.content.FileProvider"
+            android:name="androidx.core.content.FileProvider"
             android:authorities="@string/contacts_file_provider_authority"
             android:exported="false"
             android:grantUriPermissions="true" >

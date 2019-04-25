@@ -33,7 +33,7 @@ public class UserManagerSdkCompat {
      * @throws NullPointerException if context is null
      */
     public static boolean isUserUnlocked(Context context) {
-        return android.support.v4.os.UserManagerCompat.isUserUnlocked(context);
+        return androidx.core.os.UserManagerCompat.isUserUnlocked(context);
     }
 
 }

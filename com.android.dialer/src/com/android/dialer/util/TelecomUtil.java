@@ -23,19 +23,16 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.provider.CallLog.Calls;
-import android.support.annotation.Nullable;
-import android.support.v4.content.ContextCompat;
+import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
 import android.telecom.PhoneAccount;
 import android.telecom.PhoneAccountHandle;
 import android.telecom.TelecomManager;
-import android.telephony.PhoneNumberUtils;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.android.contacts.common.compat.CompatUtils;
 import com.android.contacts.common.compat.telecom.TelecomManagerCompat;
-import com.android.dialer.compat.DialerCompatUtils;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -20,7 +20,7 @@ import android.app.Application;
 import android.content.Context;
 import android.os.Trace;
 import android.preference.PreferenceManager;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import com.android.contacts.common.extensions.ExtensionsFactory;
 import com.android.contacts.common.testing.NeededForTesting;

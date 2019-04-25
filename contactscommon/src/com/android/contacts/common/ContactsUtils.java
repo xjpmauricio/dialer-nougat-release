@@ -22,8 +22,8 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.provider.ContactsContract.CommonDataKinds.Im;
 import android.provider.ContactsContract.DisplayPhoto;
-import android.support.annotation.IntDef;
-import android.support.v4.os.BuildCompat;
+import androidx.annotation.IntDef;
+import androidx.core.os.BuildCompat;
 import android.text.TextUtils;
 import android.util.Pair;
 

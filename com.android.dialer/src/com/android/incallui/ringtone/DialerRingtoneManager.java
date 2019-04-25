@@ -21,7 +21,7 @@ import com.google.common.base.Preconditions;
 import android.content.ContentResolver;
 import android.net.Uri;
 import android.provider.Settings;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import com.android.contacts.common.compat.CompatUtils;
 import com.android.contacts.common.testing.NeededForTesting;

@@ -15,25 +15,12 @@
  */
 package com.android.dialer.filterednumber;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
-import android.view.MenuItem;
-import android.widget.FrameLayout;
-import android.widget.FrameLayout.LayoutParams;
-import android.widget.Toast;
+import androidx.appcompat.app.AppCompatActivity;
 
-import com.android.contacts.common.GeoUtil;
-import com.android.contacts.common.dialog.IndeterminateProgressDialog;
-import com.android.contacts.common.list.OnPhoneNumberPickerActionListener;
+import android.view.MenuItem;
+
 import com.android.dialer.R;
-import com.android.dialer.database.FilteredNumberAsyncQueryHandler;
-import com.android.dialer.list.BlockedListSearchAdapter;
-import com.android.dialer.list.OnListFragmentScrolledListener;
 import com.android.dialer.list.BlockedListSearchFragment;
 import com.android.dialer.list.SearchFragment;
 import com.android.dialer.logging.Logger;

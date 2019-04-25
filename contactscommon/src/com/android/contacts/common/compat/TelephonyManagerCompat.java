@@ -17,11 +17,9 @@
 package com.android.contacts.common.compat;
 
 import android.net.Uri;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.telecom.PhoneAccountHandle;
 import android.telephony.TelephonyManager;
-
-import com.android.contacts.common.ContactsUtils;
 
 public class TelephonyManagerCompat {
     public static final String TELEPHONY_MANAGER_CLASS = "android.telephony.TelephonyManager";
